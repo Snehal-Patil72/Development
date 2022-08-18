@@ -1,0 +1,19 @@
+<ng-template #vegMenu>
+    <h1>
+        veg menu
+    </h1>
+    <h2>
+        pav bhaji
+    </h2>
+</ng-template>
+
+<ng-template #NonVeg>
+    <h1>
+        Non-veg menu
+    </h1>
+    <h2>
+Chicken    </h2>
+</ng-template>
+
+
+<h1 *ngIf="menu ;then vegMenu;else  NonVeg"><h1>

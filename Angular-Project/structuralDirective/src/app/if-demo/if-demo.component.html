@@ -1,0 +1,36 @@
+
+
+<h1 *ngIf="flag">
+    Inside Marvellous Componenet
+</h1>
+
+
+
+<ng-template #VegFood>
+<h1>
+    please consider veg food menu
+</h1>
+<h2>
+    panner masala
+</h2>
+</ng-template>
+
+
+<ng-template #NonvegFood>
+<h1>
+    please consider non veg food menu  
+</h1>
+<h2>Chicken masala</h2>
+</ng-template>
+
+
+<h1 *ngIf="Food ;then VegFood;else NonvegFood">
+</h1>
+
+<!-----
+<div [ngSwitch]="Batch">
+    <div *ngSwitchCase="PPA">You Selected PPA</div>
+    <div *ngSwitchDefault>There no such batch</div>
+    
+</div>
+---------->
