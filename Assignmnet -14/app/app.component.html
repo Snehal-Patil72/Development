@@ -1,0 +1,131 @@
+<div class="container-fluid">
+   <br>
+
+   <div>
+      <table align="center">
+         <tr>
+            <td>
+               <div>
+                  <h1 class="mb-3" style="color: violet; margin-left: 25%; ">Contact Our</h1>
+                  <h1 class="mb-3">Customer Support Center </h1>
+               </div>
+            </td>
+            <td>
+               <div class="col-md-6" style="width:30% ;margin-left: 70%;">
+                  <img src="assets/images/laptop.jpg" width="200" height="150">
+               </div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <br>
+   <br>
+
+   <div style="height: 60%;">
+      <h2 style="text-align: center;">Contact Information</h2>
+      <h2 style="text-align:center ;">Please fill out your contact Information below</h2>
+
+   </div>
+
+      <br>
+
+      <div>
+         <form    [formGroup]="MarvellousForm" class="form-horizontal custom-form" role="form">
+
+            <div class="form-group">
+               <label class="col-sm-2 control-label">Name<span style="color: red;">*</span></label>
+               <div class="col-sm-10">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="input-group">
+                           <!----- <input [class.is-invalid] = "MarvellousForm.get('firstName')?.invalid" type="text" class="form-control" formControlName="firstName" >
+                    <small [class.d-none]="MarvellousForm.get('firstName')?.valid" class="text-danger">First Name is required</small>-->
+                           <input [class.is-invalid]="MarvellousForm.get('firstName')?.invalid" type="text"
+                              class="form-control" formControlName="firstName">
+                        </div>
+
+                        <label style="font-size: 90%;" class="col-sm-2 control-label">First Name</label>
+                        <br>
+
+                     </div>
+
+
+                     <div class="col-md-6">
+                        <div class="input-group">
+                           <input [class.is-invalid]="MarvellousForm.get('lastName')?.invalid" type="text"
+                              class="form-control" formControlName="lastName">
+
+                        </div>
+                        <label style="font-size: 90%;" class="col-sm-2 control-label">Last Name</label>
+                        <br>
+                        <small [class.d-none]="MarvellousForm.get('lastName')?.valid" class="text-danger">Last Name is
+                           required</small>
+
+
+                     </div>
+                  </div>
+
+
+               </div>
+            </div>
+
+            <br>
+
+            <div>
+               <label class="col-sm-2 control-label">Email<span style="color: red;">*</span></label>
+               <input type="email" [class.is-invalid]="MarvellousForm.get('email')?.invalid" class="form-control "
+                  formControlName="email" style="width: 90%;">
+            </div>
+            <br>
+            <div>
+               <label class="col-sm-2 control-label">Phone<span style="color: red;">*</span></label>
+               <input type="text" [class.is-invalid]="MarvellousForm.get('phone')?.invalid" class="form-control"
+                  formControlName="phone" style="width: 90%;">
+            </div>
+
+            <br>
+            <div>
+               <label class="col-sm-2 control-label">Address<span style="color: red;">*</span></label>
+               <input type="text" class="form-control" style="width: 90%;">
+            </div>
+
+            <br>
+
+            <div>
+               <label class="col-sm-2 control-label">City<span style="color: red;">*</span></label>
+               <input type="text" [class.is-invalid]="MarvellousForm.get('city')?.invalid" class="form-control"
+                  formControlName="city" style="width: 90%;">
+            </div>
+
+            <div>
+
+               <br>
+               <label for="state">Choose a State:</label>
+
+               <select name="states" id="cars">
+                  <option value="volvo">Maharashtra</option>
+                  <option value="saab">Gujarat</option>
+                  <option value="mercedes">Utter Pradesh</option>
+               </select>
+            </div>
+            <br>
+            
+            <div>
+               <div>
+                  <label class="col-sm-2 control-label">Comment<span style="color: red;">*</span></label>
+                  <textarea type="text" [class.is-invalid]="MarvellousForm.get('comment')?.invalid" class="form-control"
+                     formControlName="comment" style="width: 90%;">
+                 </textarea>
+               </div>
+               <br>
+            </div>
+            <button type="submit" class="btn btn-primary"  [disabled]="MarvellousForm.invalid">Submit</button>
+
+
+            <div>
+
+
+
+            </div>
+         </form>
+      </div>
