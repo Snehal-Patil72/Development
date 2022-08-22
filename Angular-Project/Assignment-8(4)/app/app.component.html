@@ -1,0 +1,11 @@
+<input [(ngModel)]="Data" type="text">
+
+<h1>String Length : {{Data.length}}</h1>
+
+<!--<input #box (keyup.enter)="onEnter(box.value)">
+
+-->
+<input #yourInput type="text" (keyup.enter)="sendit(yourInput.value)" />
+
+<h1>Data {{indata}}</h1>
+
