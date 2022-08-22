@@ -1,0 +1,14 @@
+<h1>Prime Number Check</h1>
+
+<h2>Number:5</h2>
+
+<ng-template #prime>
+  <h2>Number is Prime</h2>
+</ng-template>
+
+
+<ng-template #Noprime>
+    <h2>Number is Not Prime</h2>
+  </ng-template>
+
+  <h2 *ngIf="primeresult ;then prime;else Noprime" ></h2>
