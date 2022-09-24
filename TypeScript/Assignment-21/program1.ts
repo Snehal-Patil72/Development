@@ -1,0 +1,32 @@
+function main():void
+{
+
+    Display("%");
+
+}
+
+function Display(str:string):void
+{
+    var no:number=0;
+
+    no=str.charAt(0).charCodeAt(0);
+
+    if((no>=65 && no<=90) ||( no>=97 && no<=122))
+    {
+       if((no>=65 && no<=90))
+       {
+        console.log(str.toLowerCase())
+       }
+       else
+       {
+        console.log(str.toUpperCase())
+       }
+
+    }
+    else
+    {
+        console.log(str);
+    }
+}
+
+main();
